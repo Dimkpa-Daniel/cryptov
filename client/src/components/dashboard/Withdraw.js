@@ -13,7 +13,7 @@ const linkStyle = {
     color: "unset",
 };
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://oyster-app-hahsr.ondigitalocean.app/";
 class Withdraw extends Component {
 
     constructor() {
