@@ -17,7 +17,7 @@ import './invest.css';
 // import lite from './assets/lite.png';
 // import usdt from './assets/usdt.png';
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://oyster-app-hahsr.ondigitalocean.app/";
 
 const plans = [
     { id: 1, name: "Starter", refbonus: 7, duration: 12, roi: 144, min: 50, max: 499 },
