@@ -9,7 +9,7 @@ import style from "./data.css";
 
 
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://oyster-app-hahsr.ondigitalocean.app/";
 
 class TransactionData extends Component {
  
