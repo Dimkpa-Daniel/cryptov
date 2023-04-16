@@ -21,7 +21,7 @@ import { logoutUser } from "../../actions/authActions";
 
 import UserTxn from './UserTxns';
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://oyster-app-hahsr.ondigitalocean.app/";
 
 const linkStyle = {
   textDecoration: 'none',
