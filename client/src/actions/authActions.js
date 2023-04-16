@@ -2,7 +2,7 @@ import axios from "axios";
 import setAuthToken from "../utils/setAuthToken";
 import jwt_decode from "jwt-decode";
 
-import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
+import {  SET_CURRENT_USER, USER_LOADING } from "./types";
 
 axios.defaults.baseURL = "https://oyster-app-hahsr.ondigitalocean.app/";
 // Register User
@@ -11,10 +11,7 @@ export const registerUser = (userData, history) => dispatch => {
     .post("/api/users/register", userData)
     .then(res => history.push("/login"))
     .catch(err =>
-      dispatch({
-        type: GET_ERRORS,
-        payload: err.response.data
-      })
+       console.log(err)
     );
 };
 
@@ -36,10 +33,7 @@ export const loginUser = userData => dispatch => {
       dispatch(setCurrentUser(decoded));
     })
     .catch(err =>
-      dispatch({
-        type: GET_ERRORS,
-        payload: err.response.data
-      })
+       console.log(err)
     );
 };
 
