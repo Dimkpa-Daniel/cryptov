@@ -4,7 +4,7 @@ import jwt_decode from "jwt-decode";
 
 import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://oyster-app-hahsr.ondigitalocean.app/";
 // Register Transaction
 export const userDeposit = (userData) => dispatch => {
   axios
